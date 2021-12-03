@@ -1,0 +1,19 @@
+{
+  "name": "adventofcode",
+  "version": "1.0.0",
+  "description": "A few of my attempts for Advent Of Code",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CallumKing90/AdventOfCode.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CallumKing90/AdventOfCode/issues"
+  },
+  "homepage": "https://github.com/CallumKing90/AdventOfCode#readme",
+  "type": "module"
+}

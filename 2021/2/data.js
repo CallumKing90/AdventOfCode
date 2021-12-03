@@ -1,11 +1,11 @@
-const testInput = `forward 5
+export const testData = `forward 5
 down 5
 forward 8
 up 3
 down 8
 forward 2`;
 
-const input1 = `forward 9
+export const puzzleData = `forward 9
 down 9
 down 6
 up 2
@@ -1005,37 +1005,3 @@ down 2
 down 5
 down 1
 forward 5`;
-
-const array = input1.split(/\n/);
-
-let depth = 0;
-let horizontal = 0;
-let aim = 0;
-
-array.forEach((item) => {
-  const [direction, value] = item.split(" ");
-
-  const number = Number(value);
-
-  switch (direction) {
-    case "forward":
-      horizontal += number;
-      const newVal = aim ? aim * number : 0;
-      depth += newVal;
-      break;
-    case "up":
-      // depth -= number;
-      aim -= number;
-      break;
-    case "down":
-      // depth += number;
-      aim += number;
-      break;
-    default:
-      console.log(`no value`);
-  }
-
-  console.log(`depth: ${depth}`, `horizontal: ${horizontal}`, `aim: ${aim}`);
-});
-
-console.log(depth * horizontal);
